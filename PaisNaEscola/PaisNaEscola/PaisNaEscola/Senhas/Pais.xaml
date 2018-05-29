@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaisNaEscola.Senhas.Pais">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image WidthRequest="200" HeightRequest="200" Source="pais.png"/>
+            <Entry Placeholder="Login" PlaceholderColor="LightBlue" WidthRequest="200" HeightRequest="50" Margin="100"/>
+            <Entry Placeholder="Senha" PlaceholderColor="LightBlue" WidthRequest="200" HeightRequest="50" Margin="100"/>
+            <Button BackgroundColor="LightGray" Text="OK" WidthRequest="10" HorizontalOptions="Center"/>
+            <Label />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

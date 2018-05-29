@@ -16,6 +16,7 @@ namespace PaisNaEscola
 			MainPage = new PaisNaEscola.MainPage();
 		}
 
+
 		protected override void OnStart ()
 		{
 			// Handle when your app starts

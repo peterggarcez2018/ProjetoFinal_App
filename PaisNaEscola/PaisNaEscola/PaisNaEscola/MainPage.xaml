@@ -3,9 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PaisNaEscola"
              x:Class="PaisNaEscola.MainPage">
+    <ContentPage.Content>
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+        <StackLayout>
+            
+            <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+                <Image WidthRequest="250" HeightRequest="250" BackgroundColor="Transparent" Source="logo.png"/>
+            </StackLayout>
+
+            <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+                <Button x:Name="PAIS" Clicked="SenhaPais" Image="icone_pais.png" WidthRequest="200" HeightRequest="100" />
+            </StackLayout>
+
+            <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+                <Button x:Name="PROFESSOR" Clicked="SenhaProf" Image="icone_professor.png"  WidthRequest="200" HeightRequest="100"/>
+            </StackLayout>
+
+            <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+                <Button x:Name="COORDENADOR" Clicked="SenhaCoord" Image="icone_coordenador.png" WidthRequest="200" HeightRequest="100"/>
+            </StackLayout>
+        
+        </StackLayout>
+        
+    </ContentPage.Content>
 
 </ContentPage>

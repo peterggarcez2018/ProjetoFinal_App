@@ -20,7 +20,7 @@ namespace PaisNaEscola.Senhas
         }
 
         public void validarSenhaPais() {
-            bool isCoordenador = Logica.VerificarSenhas.verificarSenhaPais(LoginPais, SenhaPais);
+            bool isCoordenador = Logica.VerificarSenhas.verificarSenhaPais(LoginPais.Text, SenhaPais.Text);
             if (isCoordenador) {
               // App.Current.MainPage = new  
             } else {

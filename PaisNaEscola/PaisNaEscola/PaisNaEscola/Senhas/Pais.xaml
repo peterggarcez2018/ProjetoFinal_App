@@ -5,10 +5,10 @@
     <ContentPage.Content>
         <StackLayout>
             <Image WidthRequest="200" HeightRequest="200" Source="pais.png"/>
-            <Entry Placeholder="Login" PlaceholderColor="LightBlue" WidthRequest="200" HeightRequest="50" Margin="100"/>
-            <Entry Placeholder="Senha" PlaceholderColor="LightBlue" WidthRequest="200" HeightRequest="50" Margin="100"/>
-            <Button BackgroundColor="LightGray" Text="OK" WidthRequest="10" HorizontalOptions="Center"/>
-            <Label />
+            <Entry Placeholder="Login" x:Name="LoginPais"  PlaceholderColor="LightBlue" WidthRequest="200" HeightRequest="50" Margin="100"/>
+            <Entry Placeholder="Senha" x:Name="SenhaPais" PlaceholderColor="LightBlue" WidthRequest="200" HeightRequest="50" Margin="100"/>
+            <Button Clicked="validarSenhaPais"   BackgroundColor="LightGray" Text="OK" WidthRequest="10" HorizontalOptions="Center"/>
+            <Label x:Name="retornosenha" />
 
         </StackLayout>
     </ContentPage.Content>

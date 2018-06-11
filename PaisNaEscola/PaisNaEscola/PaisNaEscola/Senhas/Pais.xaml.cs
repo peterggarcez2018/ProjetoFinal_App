@@ -15,6 +15,25 @@ namespace PaisNaEscola.Senhas
 		public Pais ()
 		{
 			InitializeComponent ();
-		}
-	}
+
+
+        }
+
+        public void validarSenhaPais() {
+            bool isCoordenador = Logica.VerificarSenhas.verificarSenhaPais(LoginPais, SenhaPais);
+            if (isCoordenador) {
+              // App.Current.MainPage = new  
+            } else {
+                retornosenha.Text = "Login ou Senha Incorretos";
+            }
+                   
+                
+                
+                }
+
+
+
+
+
+    }
 }

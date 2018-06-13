@@ -7,13 +7,10 @@
   <ItemGroup>
     <Compile Remove="NovaPasta1\**" />
     <Compile Remove="NovaPasta2\**" />
-    <Compile Remove="NovaPasta\**" />
     <EmbeddedResource Remove="NovaPasta1\**" />
     <EmbeddedResource Remove="NovaPasta2\**" />
-    <EmbeddedResource Remove="NovaPasta\**" />
     <None Remove="NovaPasta1\**" />
     <None Remove="NovaPasta2\**" />
-    <None Remove="NovaPasta\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,12 +21,24 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Menus\Coordenador\ConteudoCoord.xaml.cs">
+      <DependentUpon>ConteudoCoord.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Menus\Coordenador\MenuCoordenador.xaml.cs">
+      <DependentUpon>MenuCoordenador.xaml</DependentUpon>
+    </Compile>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Menus\Coordenador\ConteudoCoord.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Menus\Coordenador\MenuCoordenador.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Senhas\Coordenador.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -39,5 +48,10 @@
     <EmbeddedResource Update="Senhas\Professor.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Menus\Professor\" />
+    <Folder Include="Menus\Pais\" />
   </ItemGroup>
 </Project>

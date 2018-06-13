@@ -7,21 +7,21 @@
 
         <StackLayout>
             
-            <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+            
                 <Image WidthRequest="250" HeightRequest="250" BackgroundColor="Transparent" Source="logo.png"/>
-            </StackLayout>
+            
 
-            <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+            
                 <Button Clicked="SenhaPais" Image="icone_pais.png" WidthRequest="200" HeightRequest="100" />
-            </StackLayout>
+            
 
-            <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+            
                 <Button Clicked="SenhaProf" Image="icone_professor.png"  WidthRequest="200" HeightRequest="100"/>
-            </StackLayout>
+            
 
-            <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+            
                 <Button Clicked="SenhaCoord" Image="icone_coordenador.png" WidthRequest="200" HeightRequest="100"/>
-            </StackLayout>
+            
         
         </StackLayout>
         

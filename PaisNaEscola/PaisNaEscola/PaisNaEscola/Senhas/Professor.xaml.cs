@@ -16,5 +16,12 @@ namespace PaisNaEscola.Senhas
 		{
 			InitializeComponent ();
 		}
-	}
+        
+        protected override bool OnBackButtonPressed()
+        {
+            App.Current.MainPage = new MainPage();
+            return true; 
+        }
+
+    }
 }

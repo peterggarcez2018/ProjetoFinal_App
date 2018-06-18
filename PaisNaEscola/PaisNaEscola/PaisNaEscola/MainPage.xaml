@@ -12,15 +12,15 @@
             
 
             
-                <Button Clicked="SenhaPais" Image="icone_pais.png" WidthRequest="200" HeightRequest="100" />
+                <Button Clicked="SenhaPais" Text="PAIS"  WidthRequest="200" HeightRequest="100" />
             
 
             
-                <Button Clicked="SenhaProf" Image="icone_professor.png"  WidthRequest="200" HeightRequest="100"/>
+                <Button Clicked="SenhaProf" Text="PROFESSOR"  WidthRequest="200" HeightRequest="100"/>
             
 
             
-                <Button Clicked="SenhaCoord" Image="icone_coordenador.png" WidthRequest="200" HeightRequest="100"/>
+                <Button Clicked="SenhaCoord" Text="COORDENADOR" WidthRequest="200" HeightRequest="100"/>
             
         
         </StackLayout>

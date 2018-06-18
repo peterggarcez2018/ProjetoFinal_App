@@ -9,27 +9,21 @@ using Xamarin.Forms.Xaml;
 
 namespace PaisNaEscola.Senhas
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Pais : ContentPage
-	{
-		public Pais ()
-		{
-			InitializeComponent ();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Pais : ContentPage
+    {
+        public Pais()
+        {
+            InitializeComponent();
 
 
         }
 
-        public void validarSenhaPais(object sender, EventArgs args) {
-            bool isCoordenador = Logica.VerificarSenhas.verificarSenhaPais(LoginPais.Text, SenhaPais.Text);
-            if (isCoordenador) {
-              // App.Current.MainPage = new  
-            } else {
-                retornosenha.Text = "Login ou Senha Incorretos";
-            }
-                   
-                
-                
-                }
+        protected override bool OnBackButtonPressed()
+        {
+            App.Current.MainPage = new MainPage();
+            return true;
+        }
 
 
 

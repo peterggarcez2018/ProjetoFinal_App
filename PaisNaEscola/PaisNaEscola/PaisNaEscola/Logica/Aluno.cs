@@ -8,6 +8,17 @@ namespace PaisNaEscola.Logica {
         public string matricula;
         public int turma; 
         public string responsavel;
-        public string senha; 
+        public string senha;
+
+
+        public Aluno(string nome, string matricula, int turma, string responsavel, string senha)
+        {
+            this.nome = nome;
+            this.matricula = matricula;
+            this.turma = turma;
+            this.responsavel = responsavel;
+            this.senha = senha; 
+        }
+
     }
 }

@@ -1,13 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             
+             xmlns:master="clr-namespace:PaisNaEscola.Menus.Coordenador"
              x:Class="PaisNaEscola.Menus.Coordenador.MenuCoordenador">
     <MasterDetailPage.Master>
-        
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Button Text="Inserir Aluno" Clicked="inseriraluno"/>
+                <Button Text="Excluir Aluno" Clicked="excluiraluno"/>
+                <Button Text="Ver msg pais" Clicked="vermsgpais"/>
+                <Button Text="Mandar msg pais" Clicked="mandarmsgpais"/>
+                <Button Text="Inserir Professor" Clicked="inserirprof"/>
+                <Button Text="Excluir Professor" Clicked="excluirprof"/>
+
+
+            </StackLayout>
+            
+            
+        </ContentPage>
     
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
-       
+        <master:ConteudoCoord/> 
     </MasterDetailPage.Detail>
 </MasterDetailPage>

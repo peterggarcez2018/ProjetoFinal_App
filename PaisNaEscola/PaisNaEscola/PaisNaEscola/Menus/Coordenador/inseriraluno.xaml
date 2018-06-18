@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaisNaEscola.Menus.Coordenador.inseriraluno">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Nome do aluno" x:Name="nomealuno" PlaceholderColor="LightBlue"  HeightRequest="50" Margin="50"/>
+            <Entry Placeholder="Turma" x:Name="turma" PlaceholderColor="LightBlue"  HeightRequest="50" Margin="50"/>
+            <Entry Placeholder="Nome do responsável" x:Name="responsavel" PlaceholderColor="LightBlue"  HeightRequest="50" Margin="50"/>
+            <Entry Placeholder="Matrícula" x:Name="matricula" PlaceholderColor="LightBlue"  HeightRequest="50" Margin="50"/>
+            <Entry Placeholder="Senha dos pais" x:Name="senhapais" PlaceholderColor="LightBlue"  HeightRequest="50" Margin="50"/>
+            <Button Text="Enviar" Clicked="cadaluno"  HeightRequest="30" Margin="200"/>
+            <Button Text="Voltar" Clicked="voltarpagcoord"  Padding="50" HeightRequest="30" Margin="200"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

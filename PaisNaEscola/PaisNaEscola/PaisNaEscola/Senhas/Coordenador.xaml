@@ -6,9 +6,9 @@
     <ContentPage.Content>
         <StackLayout>
             <Image WidthRequest="200" HeightRequest="200" Source="coordenador.png"/>
-            <Entry Placeholder="Login" x:Name="LoginCoord" PlaceholderColor="LightBlue" WidthRequest="100" HeightRequest="50"/>
-            <Entry Placeholder="Senha" x:Name="SenhaCoord" PlaceholderColor="LightBlue" WidthRequest="100" HeightRequest="50"/>
-            <Button BackgroundColor="Red" Clicked="verificarloginsenha" Text="OK" WidthRequest="20" HeightRequest="10"/>
+            <Entry Placeholder="Login" x:Name="LoginCoord" PlaceholderColor="LightBlue"  HeightRequest="50" Margin="50"/>
+            <Entry Placeholder="Senha" x:Name="SenhaCoord" PlaceholderColor="LightBlue"  HeightRequest="50" Margin="50"/>
+            <Button BackgroundColor="Red" Clicked="verificarloginsenha" Text="OK"  HeightRequest="30" Margin="200" />
             <Label />
 
         </StackLayout>
